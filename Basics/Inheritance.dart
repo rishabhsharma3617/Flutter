@@ -1,6 +1,7 @@
 abstract class Employee {
-  void
-      designation(); //It is compulsory to use every function in the derived class
+  void designation() {
+    print('HEllo');
+  } //It is compulsory to use every function in the derived class
 }
 
 class Intern extends Employee {
