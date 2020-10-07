@@ -17,10 +17,10 @@ class MyAppState extends State<MyApp> {
   String inputTask = '';
   int countInputString = 0;
   List<Map<String, dynamic>> tasks = [
-    {'taskName': 'Make 1', 'isDone': false},
-    {'taskName': 'Make 2', 'isDone': false},
-    {'taskName': 'Make 3', 'isDone': true},
-    {'taskName': 'Make 4', 'isDone': true},
+    {'taskName': 'Eat', 'isDone': false},
+    {'taskName': 'Code', 'isDone': false},
+    {'taskName': 'Meditate', 'isDone': true},
+    {'taskName': 'Exercise', 'isDone': true},
   ];
   void addTodo(String todo) {
     print('hryjj');
