@@ -20,7 +20,7 @@ class Emails {
         'Trade at Flat Brokerage Rs.20. This is the bes time',
         'Hurry! Only a few days left over for trading at Angel Broking',
         'Publish a Skill in October and get a limited-edition Alexa Developer t-shirt.Continue to publish 3 or more skills this month and you  will receive an Echo Dot in addition to the t-shirt',
-        '9:00 AM',
+        '9:42 AM',
         'Oct 22',
         Color.fromARGB(255, 123, 136, 197)));
 
@@ -30,7 +30,7 @@ class Emails {
         'Join the Hope Brigade with people that are like you',
         'Hurry! Only a few seats left for the amazing self-help workshop',
         'Hi Rishabh,I wrote a piece that I thought would help keep you positive, grounded, focused and productive.Yes, there’s much uncertainty in business and society right now. I believe the wisest thing you can do is block out a lot of the noise, use this time to strengthen your self and just do what you can do to bring more value to other people.',
-        '6:00 AM',
+        '6:09 AM',
         'Oct 22',
         Color.fromARGB(255, 148, 164, 173)));
 
@@ -40,7 +40,7 @@ class Emails {
         'Test Invitation | Chitkara University | ETE-July-Dec-2020-NS-CSL5411-SET B',
         'Hurry! Only two hours left for you to take this test',
         'You are invited to be a prt of final semester test which is being conducted by the Chitkara Univeristy , so we kindly expect your presence for the test and the marks will be uploaded to chalkpad itself',
-        '3:00 AM',
+        '3:33 AM',
         'Oct 22',
         Color.fromARGB(255, 157, 137, 127)));
 

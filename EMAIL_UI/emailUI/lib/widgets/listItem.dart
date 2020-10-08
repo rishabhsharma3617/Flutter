@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/emails.dart';
+import '../screens/emailContentScreen.dart';
 
 class ListItem extends StatelessWidget {
   String sender;
@@ -22,6 +23,14 @@ class ListItem extends StatelessWidget {
         child: Column(
           children: [
             ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => EmailPage(sender, title, heading,
+                          textContent, time, date, thumbnailColor)),
+                );
+              },
               leading: Container(
                 width: 49,
                 height: 46,
@@ -54,11 +63,13 @@ class ListItem extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Colors.black),
                     overflow: TextOverflow.ellipsis,
+                    softWrap: false,
                   ),
                   Text(
                     textContent,
                     style: TextStyle(fontSize: 15.2),
                     overflow: TextOverflow.ellipsis,
+                    softWrap: false,
                   )
                 ],
               ),
