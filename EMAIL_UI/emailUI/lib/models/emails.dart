@@ -10,7 +10,7 @@ class Emails {
         'Amazon Alexa Team',
         '[REMINDER] This October,Build Alexa SKills and Earn Sony PlayStation 4',
         'Hurry! Only a few days left over for the Alexa Developer Festive Offer',
-        'Publish a Skill in October and geta limited-edition Alexa Developer t-shirt.Continue to publish 3 or more skills this month and you  will receive an Echo Dot in addition to the t-shirt',
+        'Publish a Skill in October and geta limited-edition Alexa Developer t-shirt.Continue to publish 3 or more skills this month and you  will receive an Echo Dot in addition to the t-shirt.Publish a Skill in October and geta limited-edition Alexa Developer t-shirt.Continue to publish 3 or more skills this month and you  will receive an Echo Dot in addition to the t-shirt.Publish a Skill in October and geta limited-edition Alexa Developer t-shirt.Continue to publish 3 or more skills this month and you  will receive an Echo Dot in addition to the t-shirt.Publish a Skill in October and geta limited-edition Alexa Developer t-shirt.Continue to publish 3 or more skills this month and you  will receive an Echo Dot in addition to the t-shirt',
         '10:57 AM',
         'Oct 22',
         Color.fromARGB(255, 148, 164, 173)));

@@ -58,7 +58,7 @@ class EmailPage extends StatelessWidget {
         ),
         body: Container(
           margin: EdgeInsets.only(top: 14),
-          child: Column(
+          child: ListView(
             children: [
               Column(
                 children: [
@@ -186,6 +186,36 @@ class EmailPage extends StatelessWidget {
                               color: Color.fromARGB(255, 99, 147, 237)),
                         )
                       ],
+                    ),
+                  ),
+                  Container(
+                    width: 400,
+                    height: 180,
+                    margin: EdgeInsets.only(left: 20, right: 20, top: 15),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('assets/images/alexa.png'),
+                          fit: BoxFit.fill),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(
+                        top: 20, left: 20, right: 20, bottom: 14),
+                    child: Text(
+                      heading,
+                      style:
+                          TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(
+                      left: 20,
+                      right: 20,
+                    ),
+                    child: Text(
+                      textContent,
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
                     ),
                   )
                 ],
