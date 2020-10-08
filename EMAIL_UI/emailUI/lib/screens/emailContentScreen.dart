@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
 
 class EmailPage extends StatelessWidget {
-  String sender;
-  String title;
-  String heading;
-  String textContent;
-  String time;
-  String date;
-  Color thumbnailColor;
-
-  EmailPage(this.sender, this.title, this.heading, this.textContent, this.time,
-      this.date, this.thumbnailColor);
+  static const routeName = '/email-content';
 
   @override
   Widget build(BuildContext context) {
+    final Map emailData = ModalRoute.of(context).settings.arguments;
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 203, 79, 65),
@@ -64,7 +56,7 @@ class EmailPage extends StatelessWidget {
                 children: [
                   ListTile(
                     title: Text(
-                      title,
+                      emailData['sender'],
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -104,18 +96,18 @@ class EmailPage extends StatelessWidget {
                       margin: EdgeInsets.only(top: 0),
                       child: Center(
                           child: Text(
-                        sender.substring(0, 1),
+                        emailData['sender'].substring(0, 1),
                         style: TextStyle(fontSize: 30, color: Colors.white),
                       )),
                       decoration: BoxDecoration(
-                        color: thumbnailColor,
+                        color: emailData['thumbnailColor'],
                         shape: BoxShape.circle,
                       ),
                     ),
                     title: Row(
                       children: [
                         Text(
-                          sender,
+                          emailData['sender'],
                           style: TextStyle(
                               fontSize: 17, fontWeight: FontWeight.bold),
                         ),
@@ -137,7 +129,7 @@ class EmailPage extends StatelessWidget {
                         Row(
                           children: [
                             Text(
-                              '$time',
+                              emailData['time'],
                               style: TextStyle(
                                   fontSize: 15.2, fontWeight: FontWeight.w500),
                             ),
@@ -202,7 +194,7 @@ class EmailPage extends StatelessWidget {
                     margin: EdgeInsets.only(
                         top: 20, left: 20, right: 20, bottom: 14),
                     child: Text(
-                      heading,
+                      emailData['heading'],
                       style:
                           TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                     ),
@@ -213,7 +205,7 @@ class EmailPage extends StatelessWidget {
                       right: 20,
                     ),
                     child: Text(
-                      textContent,
+                      emailData['textContent'],
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
                     ),

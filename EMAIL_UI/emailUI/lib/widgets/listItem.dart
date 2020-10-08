@@ -1,3 +1,4 @@
+import 'package:emailUI/screens/inboxScreen.dart';
 import 'package:flutter/material.dart';
 import '../models/emails.dart';
 import '../screens/emailContentScreen.dart';
@@ -24,12 +25,16 @@ class ListItem extends StatelessWidget {
           children: [
             ListTile(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => EmailPage(sender, title, heading,
-                          textContent, time, date, thumbnailColor)),
-                );
+                Navigator.of(context)
+                    .pushNamed(EmailPage.routeName, arguments: {
+                  'sender': sender,
+                  'title': title,
+                  'heading': heading,
+                  'textContent': textContent,
+                  'time': time,
+                  'date': date,
+                  'thumbnailColor': thumbnailColor
+                });
               },
               leading: Container(
                 width: 49,
